@@ -101,43 +101,101 @@
                         Las letras que forman GOMS son las iniciales de Objetivos (Goals), Operadores (Operators),
                         Métodos (Methods), y Reglas de selección (Se lection rules).
                     </p>
-                    <p class="lead fw-normal text-muted mb-0">
-                        Estos conceptos podemos definirlos de la siguiente manera:
-                    </p>
-                    <p class="lead fw-normal text-muted mb-0">
-                        1)	Objetivos: Una estructura simbólica que define lo que el usuario quiere hacer usando el ordenador. El objetivo general puede estar dividido en subobjetivos.<br />
-                        2)	Operadores: Las acciones que el ordenador (programa) permite llevar a ca bo al usuario.<br />
-                        3)	Métodos: Son las secuencias de subobjetivos y operadores que el usuario aprende.<br />
-                        4)	Reglas de selección: Son las reglas que se encargan de seleccionar la se cuencia más apropiada, en los casos en los que son posibles varias secuencias de subobjetivos y operadores para llegar a un objetivo.<br />
-                    </p>
 
                 </div>
                 <div class="row gx-5">
                     <div class="container">
                         <div class="position-relative mb-5">
-                            <img class="img-fluid rounded-3 mb-3" src="#" alt="Foto goms" />
+                            <p class="lead fw-normal text-muted mb-0">
+                                Estos conceptos podemos definirlos de la siguiente manera:
+                            </p>
+                            <p class="lead fw-normal text-muted mb-0">
+                                1)	Objetivos: Una estructura simbólica que define lo que el usuario quiere hacer usando el ordenador.
+                                El objetivo general puede estar dividido en subobjetivos.<br />
+
+                                2)	Operadores: Las acciones que el ordenador (programa) permite llevar a ca bo al usuario.<br />
+
+                                3)	Métodos: Son las secuencias de subobjetivos y operadores que el usuario aprende.<br />
+
+                                4)	Reglas de selección: Son las reglas que se encargan de seleccionar la secuencia más apropiada,
+                                en los casos en los que son posibles varias secuencias de subobjetivos y operadores para llegar
+                                a un objetivo.<br />
+                            </p>
+                        </div>
+                        <div class="text-center mb-5">
+                            <img class="img-fluid rounded-3 mb-3" src="./Img/goms.png" alt="Foto goms" width="500" />
                         </div>
                     </div>
-                </div>
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Ejemplo de GOMS:</h1>
-                    <p class="lead fw-normal text-muted mb-0">
+                    <div class="text-center mb-5">
 
-                    </p>
-                    <p class="lead fw-normal text-muted mb-0">
+                        <h1 class="fw-bolder">Ejemplo de GOMS:</h1>
+                        
+                    </div>
+                    <div class="position-relative mb-5">
+                        <h1>G</h1>
+                        <p class="lead fw-normal text-muted mb-0">
+                            Objetivo: <br />
+                            Encontrar un artículo específico en un periódico online.<br />
+                            <div class="text-center mb-5">
+                                <img class="img-fluid rounded-3 mb-3" src="./Img/periodico.png" alt="Periodico" width="150" />
+                            </div>
+                        </p>
+                        <h1>O</h1>
+                        <p class="lead fw-normal text-muted mb-0">
+                            Operadores (operaciones que un usuario puede hacer):<br />
+                            - Hacer click.<br />
+                            - Insertar texto<br />
+                            - Borrar texto<br />
+                            - Presionar una tecla<br />
+                            - Girar la rueda del ratón (scroll)<br />
+                            - Mover el ratón<br />
+                        </p>
+                        <h1>M</h1>
+                        <p class="lead fw-normal text-muted mb-0">
+                            Métodos:<br />
+                            1.- Buscar articulo click (barra de búsqueda):<br />
+                            Consiste en buscar la noticia en la barra de búsqueda haciendo uso del click
+                            del ratón para buscar.<br />
+                            -mover el ratón (3000 ms)<br />
+                            -Hacer click (100 ms)<br />
+                            -Insertar texto (100 ms por letra)<br />
+                            -Mover ratón (3000 ms)<br />
+                            -Hacer click (100 ms)<br />
+                            -Mover ratón (2000 ms)<br />
+                            -Hacer click  (100 ms)<br />
+                            Tiempo: 8 segundos y 500 milisegundos aproximadamente<br />
 
-                    </p>
-                </div>
 
-                <div class="container center-block">
+                            2.- Buscar artículo enter (barra de búsqueda):<br />
+                            Consiste en buscar la noticia en la barra de búsqueda haciendo uso
+                            de la tecla Enter para buscar.<br />
+                            -mover el ratón (3000 ms)<br />
+                            -Hacer click (100 ms)<br />
+                            -Insertar texto (100 ms por letra)<br />
+                            -Presionar tecla (enter) (300 ms)<br />
+                            -Mover ratón (2000 ms)<br />
+                            -Hacer click (100 ms)<br />
+                            Tiempo: 6 segundos y 200 milisegundos aproximadamente<br />
 
-                    <img class="img-fluid rounded-3 mb-3" src="https://neuro-class.com/wp-content/uploads/2021/01/Portada-Recuerdos-NeuroClass-1.jpg" alt="memoria a Largo Plazo" />
 
-                </div>
+                            3.-Buscar artículo scroll:<br />
+                            Consiste en buscar la noticia moviéndose por la interfaz empleando la ruleta del ratón.<br />
+                            -girar rueda del ratón (500 ms)<br />
+                            -Mover ratón (2000 ms)<br />
+                            -Hacer click (100 ms)<br />
+                            Tiempo: A.- 2 segundos y 600 milisegundos aproximadamente, B.- +10 segundos<br />
+                        </p>
+                        <h1>S</h1>
+                        <p class="lead fw-normal text-muted mb-0">
+                            Reglas de selección:<br />
+                            A.- Si la noticia es antigua es mejor utilizar el método Buscar artículo Enter (barra de búsqueda)
+                            puesto que si hacemos uso del scroll, tendremos que navegar durante mucho tiempo (5 segundos).<br />
+                            B.- Si la noticia es actual, es mejor utilizar el método Buscar artículo scroll (4 segundos).<br />
+                        </p>
 
-
-            </div>
-        </section>
+                    </div>
+                    
+</section>
     </main>
     <!-- Footer-->
     <footer class="bg-dark py-4 mt-auto">
