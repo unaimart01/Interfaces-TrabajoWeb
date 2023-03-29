@@ -15,7 +15,7 @@
 </head>
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-        <!-- Navigation-->        
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html">El Factor Humano</a>
@@ -23,24 +23,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Niveles conducta interactiva</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="#">?</a></li>
-                                <li><a class="dropdown-item" href="#">?</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cognición</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="#">Cognición individual</a></li>
-                                <li><a class="dropdown-item" href="#">Cognición distribuida</a></li>
+                                <li><a class="dropdown-item" href="cogind.html">Cognición individual</a></li>
+                                <li><a class="dropdown-item" href="cogdistrb.html">Cognición distribuida</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Arquitectura cognitivas generales</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="#">SOAR</a></li>
-                                <li><a class="dropdown-item" href="#">GOMS</a></li>
+                                <li><a class="dropdown-item" href="soar.html">SOAR</a></li>
+                                <li><a class="dropdown-item" href="goms.html">GOMS</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -72,15 +65,17 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Representación del conocimiento</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                <li><a class="dropdown-item" href="#">?</a></li>
-                                <li><a class="dropdown-item" href="#">?</a></li>
-                                <li><a class="dropdown-item" href="#">?</a></li>
+                                <li><a class="dropdown-item" href="modelosmentales.html">Modelos Mentales</a></li>
+                                <li><a class="dropdown-item" href="redessemanticas.html">Redes Semánticas</a></li>
+                                <li><a class="dropdown-item" href="recupexpli.html">Recuperación Explicita</a></li>
+                                <li><a class="dropdown-item" href="recupimpli.html">Recuperación Implícita</a></li>
+                                <li><a class="dropdown-item" href="pathfinder.html">Pathfinder</a></li>
+                                <li><a class="dropdown-item" href="escalaemientomtdm.html">Escalamiento Multidimensional</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
         </nav>
         <!-- Page Content-->
         <section class="py-5">
@@ -113,25 +108,25 @@
                         En SOAR el procesamiento de la información ocurre en una estructura cognitiva como la siguiente:
                     </p>
                     <img class="img-fluid rounded-3 mb-3" src="./Img/EstrSOAR.png" alt="Estructura cognitiva SOAR" width="600" />
-                
-                <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted mb-0">
-                        La información entra en el sistema a través de los canales sensoriales y es almacenada en la Memoria Operativa temporal. En la MO están contenidos todos los datos de la solución del problema en un momento determinado. Contiene todos los objetivos, espacios del problema, estados y operadores.
-                        La información permanente está almacenada en la Memoria a Largo Plazo a la que se le llama Memoria de Reconocimiento para resaltar que la información almacena da en las condiciones de las reglas de producción son patrones que deben ser reco nocidas en los contenidos de la Memoria Operativa.
-                        En SOAR no se hace distinción entre Memoria Declarativa y Memoria Procedimental. Toda la información, declarativa y procedimental está contenida en las reglas de producción. Es posible añadir conocimiento a la Memoria a Largo Plazo, pero no modificarla o eliminarla. Dependiendo de los contenidos de la Memoria operativa, se recupera información de la Memoria a Largo Plazo y se almacena en la Memoria de Preferencias. Son procesadas por un proceso de Decisión para determinar que contenidos de la Memoria Operativa son modificados. Existe además una Memoria de Trazos donde se almacena la información que va siendo recuperada de la Memoria a Largo Plazo. Está información es utilizada para descubrir patrones que permitan almacenar nuevas reglas de producción en la Memoria a Largo Plazo.
-                        En SOAR la información permanente está almacenada en forma de Reglas de Producción. Las condiciones de las reglas de producción que están almacenadas en la MLP son comparadas (matching) con los contenidos de la Memoria Operativa. Si una regla cumple su condición, la regla coloca su acción en la memoria de Preferencias.
-                        Las acciones pueden ser de dos clases, actuaciones directas sobre el ambiente o modificaciones en los contenidos de la Memoria Operativa. En ambos casos, suponen una modificación en los contenidos de la MO puesto que estos contenidos son, en gran parte, lo que el sistema perceptual capta del ambiente.
-                        En SOAR todas las reglas que se cumplen se colocan en la Memoria de Preferencias y a cada acción se le asigna un ‘valor de preferencia’. Permite a un Proceso de Decisión elegir cual ejecutar primero.
-                    </p>
-                    <p class="lead fw-normal text-muted mb-0">
-                        A veces que en la Memoria de Preferencias hay varias acciones que pueden llevarse a cabo y no hay forma de elegir entre ellas. Entonces se llega a una situación de impasse.
-                        El conocimiento almacenado en la Memoria Permanente es de dos tipos. Problema nuevo, lo hace con reglas de producción generales que forman parte de la arquitectura. Nuevas reglas van siendo añadidas como resultado del aprendizaje. A través de un proceso llamado agrupamiento (chunking).
-                        La solución al impasse significa encontrar una acción que lo solucione. SOAR analiza cuales fueron las condiciones que llevaron al impasse y cual es la acción que lo ha solucionado, y crea una nueva regla con esa condición y esa acción. Esta es añadida a la Memoria Permanente. El impasse no se produce y no es necesario generar un nuevo subobjetivo.
-                        En SOAR todas las reglas que cumplan su condición por tener la Me moria Operativa la información que requieren se activan en paralelo. Sin embargo, la activación de las reglas no lleva a su aplicación inmediata.
-                        Si en la Memoria de Preferencias las reglas activadas tienen asociados diferentes valores de preferencias es posible elegir que regla se aplicará.
-                    </p>
+
+                    <div class="text-center mb-5">
+                        <p class="lead fw-normal text-muted mb-0">
+                            La información entra en el sistema a través de los canales sensoriales y es almacenada en la Memoria Operativa temporal. En la MO están contenidos todos los datos de la solución del problema en un momento determinado. Contiene todos los objetivos, espacios del problema, estados y operadores.
+                            La información permanente está almacenada en la Memoria a Largo Plazo a la que se le llama Memoria de Reconocimiento para resaltar que la información almacena da en las condiciones de las reglas de producción son patrones que deben ser reco nocidas en los contenidos de la Memoria Operativa.
+                            En SOAR no se hace distinción entre Memoria Declarativa y Memoria Procedimental. Toda la información, declarativa y procedimental está contenida en las reglas de producción. Es posible añadir conocimiento a la Memoria a Largo Plazo, pero no modificarla o eliminarla. Dependiendo de los contenidos de la Memoria operativa, se recupera información de la Memoria a Largo Plazo y se almacena en la Memoria de Preferencias. Son procesadas por un proceso de Decisión para determinar que contenidos de la Memoria Operativa son modificados. Existe además una Memoria de Trazos donde se almacena la información que va siendo recuperada de la Memoria a Largo Plazo. Está información es utilizada para descubrir patrones que permitan almacenar nuevas reglas de producción en la Memoria a Largo Plazo.
+                            En SOAR la información permanente está almacenada en forma de Reglas de Producción. Las condiciones de las reglas de producción que están almacenadas en la MLP son comparadas (matching) con los contenidos de la Memoria Operativa. Si una regla cumple su condición, la regla coloca su acción en la memoria de Preferencias.
+                            Las acciones pueden ser de dos clases, actuaciones directas sobre el ambiente o modificaciones en los contenidos de la Memoria Operativa. En ambos casos, suponen una modificación en los contenidos de la MO puesto que estos contenidos son, en gran parte, lo que el sistema perceptual capta del ambiente.
+                            En SOAR todas las reglas que se cumplen se colocan en la Memoria de Preferencias y a cada acción se le asigna un ‘valor de preferencia’. Permite a un Proceso de Decisión elegir cual ejecutar primero.
+                        </p>
+                        <p class="lead fw-normal text-muted mb-0">
+                            A veces que en la Memoria de Preferencias hay varias acciones que pueden llevarse a cabo y no hay forma de elegir entre ellas. Entonces se llega a una situación de impasse.
+                            El conocimiento almacenado en la Memoria Permanente es de dos tipos. Problema nuevo, lo hace con reglas de producción generales que forman parte de la arquitectura. Nuevas reglas van siendo añadidas como resultado del aprendizaje. A través de un proceso llamado agrupamiento (chunking).
+                            La solución al impasse significa encontrar una acción que lo solucione. SOAR analiza cuales fueron las condiciones que llevaron al impasse y cual es la acción que lo ha solucionado, y crea una nueva regla con esa condición y esa acción. Esta es añadida a la Memoria Permanente. El impasse no se produce y no es necesario generar un nuevo subobjetivo.
+                            En SOAR todas las reglas que cumplan su condición por tener la Me moria Operativa la información que requieren se activan en paralelo. Sin embargo, la activación de las reglas no lleva a su aplicación inmediata.
+                            Si en la Memoria de Preferencias las reglas activadas tienen asociados diferentes valores de preferencias es posible elegir que regla se aplicará.
+                        </p>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
     <!-- Footer-->
